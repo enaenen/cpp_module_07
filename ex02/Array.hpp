@@ -10,17 +10,16 @@ template <typename T>
 class Array {
    private:
 	T *element;
-	unsigned int size;
+	unsigned int _size;
 
    public:
 	Array( void );
 	Array( unsigned int n );
-	Array( const Array *ref );
+	Array( const Array &ref );
 	Array &operator=( const Array &ref );
 	~Array( void );
-	T &operator=( const Array &ref );
 	T &operator[]( const unsigned int idx );
-	T &operator[]( const unsigned int idx ) const;
+	const T &operator[]( const unsigned int idx ) const;
 
 	unsigned int size( void ) const;
 	const T *getElementAddr( void ) const;
