@@ -3,6 +3,7 @@
 #include <iostream>
 #include <exception>
 #include <stdexcept>
+#include <cstdlib>
 
 #define MAX_VAL 750
 
