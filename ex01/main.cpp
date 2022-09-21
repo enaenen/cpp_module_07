@@ -1,5 +1,47 @@
 #include "iter.hpp"
 
+/*
+class Awesome {
+   private:
+	int _n;
+
+   public:
+	Awesome( void ) : _n( 0 ) {}
+	Awesome( int n ) : _n( n ) {}
+	Awesome& operator=( Awesome& a ) {
+		_n = a._n;
+		return *this;
+	}
+	bool operator==( Awesome const& rhs ) const {
+		return ( this->_n == rhs._n );
+	}
+	bool operator!=( Awesome const& rhs ) const {
+		return ( this->_n != rhs._n );
+	}
+	bool operator>( Awesome const& rhs ) const { return ( this->_n > rhs._n ); }
+	bool operator<( Awesome const& rhs ) const { return ( this->_n < rhs._n ); }
+	bool operator>=( Awesome const& rhs ) const {
+		return ( this->_n >= rhs._n );
+	}
+	bool operator<=( Awesome const& rhs ) const {
+		return ( this->_n <= rhs._n );
+	}
+	int get_n() const { return _n; }
+};
+
+std::ostream& operator<<( std::ostream& os, const Awesome& awe ) {
+	os << awe.get_n() << std::endl;
+	return os;
+}
+
+int main( void ) {
+1,2,3,4
+42
+42
+42
+42
+}
+*/
 int main( void ) {
 	std::cout << "Template Iter Int Test" << std::endl;
 	int intArr[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
